@@ -172,6 +172,7 @@ body {
 
 .connect-item-all {
   display: block;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -220,9 +221,11 @@ footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+
 .bottom-icon-list {
   display: flex;
   margin-top: 0;
@@ -442,29 +445,31 @@ footer {
 .list-clients {
   display: flex;
 }
+
 .clients-icon-background {
+  margin-right: 30px;
+}
+.clients-icon-background:last-child {
+  margin-right: 0pc;
+}
+
+.item-box {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
 }
-.clients-item:last-child {
-  margin-right: 0pc;
-}
-.clients-icon-background:hover,
-.clients-icon-background:focus {
+.item-box:hover,
+.item-box:focus {
   border-color: var(--accent-color);
 }
-
-.clients-icon-background:hover .clients-icon,
-.clients-icon-background:focus .clients-icon {
+.item-box:focus .clients-icon,
+.item-box:hover .clients-icon {
   fill: var(--accent-color);
 }
-
 /* section portfolio */
 .portfolio-list .title {
   color: var(--title-text-color);
@@ -515,9 +520,11 @@ footer {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+.portfolio-project-item {
+  display: inline-block;
+}
 .portfolio-project-item:focus,
 .portfolio-project-item:hover {
-  display: inline-block;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 
